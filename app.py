@@ -12,8 +12,8 @@ email_origen=""
 def hello_world():
     return render_template("login.html")
 
-@app.route("/verifciarUsuario",methods=["GET","POST"])
-def verifciarUsuario():
+@app.route("/verificarUsuario",methods=["GET","POST"])
+def verificarUsuario():
     
     correo=request.form["txtusuario"]
     password=request.form["txtpass"]
