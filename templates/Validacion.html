@@ -1,0 +1,152 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - BBBootstrap</title>
+                                <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='#' rel='stylesheet'>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <style>::-webkit-scrollbar {
+                                  width: 8px;
+                                }
+                                /* Track */
+                                ::-webkit-scrollbar-track {
+                                  background: #f1f1f1; 
+                                }
+                                 
+                                /* Handle */
+                                ::-webkit-scrollbar-thumb {
+                                  background: #888; 
+                                }
+                                
+                                /* Handle on hover */
+                                ::-webkit-scrollbar-thumb:hover {
+                                  background: #555; 
+                                } 
+                                
+                                
+body {
+
+      background-image: url(https://images.unsplash.com/photo-1629196206335-744346ba1331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      color: #ffffff;
+    }
+
+
+.card{
+
+  width: 400px;
+  height: 240px;
+  border:none;
+
+}
+
+.btr{
+
+  border-top-right-radius: 5px !important;
+}
+
+
+.btl{
+
+  border-top-left-radius: 5px !important;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #673ab7;
+    border-color: #673ab7;
+}
+
+
+.btn-dark:hover {
+    color: #fff;
+    background-color: #311b92;
+    border-color: #311b92;
+}
+
+
+.nav-pills{
+
+  display:table !important;
+  width:100%;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0px;
+        border-bottom: 1px solid #0d6efd40;
+
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #673ab7;
+}
+
+.nav-item{
+      display: table-cell;
+       background: #0d6efd2e;
+}
+
+
+.form{
+
+  padding: 10px;
+      height: 300px;
+}
+
+.form input{
+
+  margin-bottom: 12px;
+  border-radius: 3px;
+}
+
+
+.form input:focus{
+
+  box-shadow: none;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.form button{
+
+  margin-top: 20px;
+}</style>
+   </head>
+    <body className='snippet-body'>
+   <div class="d-flex justify-content-center align-items-center mt-5">
+
+
+        <div class="card">
+
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+           
+                <li class="nav-item text-center">
+                  <a class="nav-link active btl id="pills-profile-tab2" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile" aria-selected="false">Validacion Cuenta</a>
+                </li>
+               
+              </ul>
+               
+                  <div class="form px-4">
+                       <p>Ingrese el codigo de verificacion, que fue enviado  su correo (Verifique bandeja de spam)</p>
+                    <form action="ActivarUsuario" method="POST">
+                      <input required type="text" id="txtcodigo" name="txtcodigo" name="" class="form-control" placeholder="Codigo de Verificacion">
+
+                      <button type="submit" class="btn btn-dark btn-block">Validar</button>
+                    </form>
+
+                  </div>
+        </div>
+        
+      </div>
+       <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+    </body>
+                            
+    </html>
